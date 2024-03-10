@@ -34,7 +34,7 @@ export default function Home() {
 					{data.map((d, i) => (
 						<div
 							key={i}
-							className="border-2 border-black bg-red-300 rounded-l-full rounded-r-md"
+							className="border-2 border-black bg-red-400 rounded-l-full rounded-r-md"
 						>
 							<div className="flex justify-between flex-wrap">
 								<div className="flex gap-3 md:gap-5 items-center">

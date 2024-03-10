@@ -1,5 +1,8 @@
 from fastapi import FastAPI
+
 from pydantic import BaseModel
+import requests
+from io import StringIO
 
 # environment variables
 from dotenv import load_dotenv
@@ -51,10 +54,18 @@ def read_root() -> list[Data]:
     return data
 
 @app.on_event("startup")
-@repeat_every(seconds=3600)
+@repeat_every(seconds=60)
 def calculate_log_losses():
   global data
   temp_data = []
+
+  # load the matchups data
+  matchups = pd.read_csv('./matchup data/matchups.csv')
+  raw_matchup_data = requests.get(f'https://docs.google.com/spreadsheets/d/1i-2i5E2I-M7uCjcSS1TLW1v2n5dbZQfVQIK16kx5-94/gviz/tq?tqx=out:csv&sheet=Matchups').text
+  matchups = pd.read_csv(StringIO(raw_matchup_data))
+
+  # drop unnamed columns
+  matchups = matchups.loc[:, ~matchups.columns.str.contains('^Unnamed')]
 
   for team in teams:
     try: 
@@ -92,12 +103,6 @@ def calculate_log_losses():
 
     print(f"Generated {team} model!")
 
-    # load the matchups data
-    matchups = pd.read_csv('./matchup data/matchups.csv')
-
-    # drop unnamed columns
-    matchups = matchups.loc[:, ~matchups.columns.str.contains('^Unnamed')]
-
     log_losses = {}
     predictions = {}
     
@@ -110,8 +115,10 @@ def calculate_log_losses():
       matchup_name = f"{row['team']} vs {row['team_2']}"
       predictions[matchup_name] = pred[0][1]
 
-      if not row['outcome']:
+      # skip unplayed games
+      if str(row['outcome']) == 'nan':
         continue
+
       # calculate the log loss of the prediction
       log_loss = -1 * (row['outcome'] * np.log(pred[0][1]) + (1 - row['outcome']) * np.log(pred[0][0]))
       log_losses[matchup_name] = log_loss
