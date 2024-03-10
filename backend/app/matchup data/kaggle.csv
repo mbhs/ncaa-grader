@@ -1,0 +1,364 @@
+﻿TeamID,team name ,ConfAbbrev
+1101,Abilene Christian,wac
+1102,Air Force,mwc
+1103,Akron,mac
+1104,Alabama,sec
+1105,Alabama A&M,swac
+1106,Alabama State,swac
+1107,Albany (NY),aec
+1108,Alcorn State,swac
+1110,American,patriot
+1111,Appalachian State,sun_belt
+1112,Arizona,pac_twelve
+1113,Arizona State,pac_twelve
+1114,Little Rock,ovc
+1115,Arkansas-Pine Bluff,swac
+1116,Arkansas,sec
+1117,Arkansas State,sun_belt
+1119,Army,patriot
+1120,Auburn,sec
+1122,Austin Peay,a_sun
+1123,Ball State,mac
+1124,Baylor,big_twelve
+1125,Belmont,mvc
+1126,Bethune-Cookman,swac
+1127,Binghamton,aec
+1129,Boise State,mwc
+1130,Boston College,acc
+1131,Boston University,patriot
+1132,Bowling Green State,mac
+1133,Bradley,mvc
+1135,Brown,ivy
+1136,Bryant,aec
+1137,Bucknell,patriot
+1138,Buffalo,mac
+1139,Butler,big_east
+1140,Brigham Young,wcc
+1141,Central Michigan,mac
+1142,Cal Poly,big_west
+1143,California,pac_twelve
+1144,Campbell,big_south
+1145,Canisius,maac
+1146,Central Arkansas,a_sun
+1148,Central Connecticut State,nec
+1149,Charleston Southern,big_south
+1150,Charlotte,cusa
+1151,Chattanooga,southern
+1152,Chicago State,ind
+1153,Cincinnati,aac
+1154,The Citadel,southern
+1155,Clemson,acc
+1156,Cleveland State,horizon
+1157,Coastal Carolina,sun_belt
+1158,College of Charleston,caa
+1159,Colgate,patriot
+1160,Colorado,pac_twelve
+1161,Colorado State,mwc
+1162,Columbia,ivy
+1163,Connecticut,big_east
+1164,Coppin State,meac
+1165,Cornell,ivy
+1166,Creighton,big_east
+1167,Cal State Bakersfield,big_west
+1168,Cal State Fullerton,big_west
+1169,Cal State Northridge,big_west
+1170,Sacramento State,big_sky
+1171,Dartmouth,ivy
+1172,Davidson,a_ten
+1173,Dayton,a_ten
+1174,Delaware,caa
+1175,Delaware State,meac
+1176,Denver,summit
+1177,DePaul,big_east
+1178,Detroit Mercy,horizon
+1179,Drake,mvc
+1180,Drexel,caa
+1181,Duke,acc
+1182,Duquesne,a_ten
+1183,Eastern Illinois,ovc
+1184,Eastern Kentucky,a_sun
+1185,Eastern Michigan,mac
+1186,Eastern Washington,big_sky
+1187,East Carolina,aac
+1188,SIU Edwardsville,ovc
+1189,Elon,caa
+1190,East Tennessee State,southern
+1191,Evansville,mvc
+1192,FDU,nec
+1193,Fairfield,maac
+1194,Florida Atlantic,cusa
+1195,Florida Gulf Coast,a_sun
+1196,Florida,sec
+1197,Florida A&M,swac
+1198,Florida International,cusa
+1199,Florida State,acc
+1200,Fordham,a_ten
+1201,Fresno State,mwc
+1202,Furman,southern
+1203,George Washington,a_ten
+1204,Georgia Southern,sun_belt
+1205,Gardner-Webb,big_south
+1206,George Mason,a_ten
+1207,Georgetown,big_east
+1208,Georgia,sec
+1209,Georgia State,sun_belt
+1210,Georgia Tech,acc
+1211,Gonzaga,wcc
+1212,Grambling,swac
+1213,Grand Canyon,wac
+1214,Hampton,caa
+1216,Hartford,ind
+1217,Harvard,ivy
+1218,Hawaii,big_west
+1219,High Point,big_south
+1220,Hofstra,caa
+1221,Holy Cross,patriot
+1222,Houston,aac
+1223,Houston Christian,southland
+1224,Howard,meac
+1225,Idaho,big_sky
+1226,Idaho State,big_sky
+1227,Illinois-Chicago,mvc
+1228,Illinois,big_ten
+1229,Illinois State,mvc
+1230,Incarnate Word,southland
+1231,Indiana,big_ten
+1232,Indiana State,mvc
+1233,Iona,maac
+1234,Iowa,big_ten
+1235,Iowa State,big_twelve
+1236,Purdue Fort Wayne,horizon
+1237,IUPUI,horizon
+1238,Jackson State,swac
+1239,Jacksonville,a_sun
+1240,Jacksonville State,a_sun
+1241,James Madison,sun_belt
+1242,Kansas,big_twelve
+1243,Kansas State,big_twelve
+1244,Kennesaw State,a_sun
+1245,Kent State,mac
+1246,Kentucky,sec
+1247,La Salle,a_ten
+1248,Lafayette,patriot
+1249,Lamar,southland
+1250,Lehigh,patriot
+1251,Liberty,a_sun
+1252,Lipscomb,a_sun
+1253,Long Beach State,big_west
+1254,Long Island University,nec
+1255,Longwood,big_south
+1256,Louisiana Tech,cusa
+1257,Louisville,acc
+1258,Loyola Marymount,wcc
+1259,Loyola (MD),patriot
+1260,Loyola (IL),a_ten
+1261,Louisiana State,sec
+1262,Massachusetts-Lowell,aec
+1263,Maine,aec
+1264,Manhattan,maac
+1265,Marist,maac
+1266,Marquette,big_east
+1267,Marshall,sun_belt
+1268,Maryland,big_ten
+1269,Massachusetts,a_ten
+1270,McNeese State,southland
+1271,Maryland-Eastern Shore,meac
+1272,Memphis,aac
+1273,Mercer,southern
+1274,Miami (FL),acc
+1275,Miami (OH),mac
+1276,Michigan,big_ten
+1277,Michigan State,big_ten
+1278,Minnesota,big_ten
+1279,Mississippi,sec
+1280,Mississippi State,sec
+1281,Missouri,sec
+1282,Kansas City,summit
+1283,Missouri State,mvc
+1284,Monmouth,caa
+1285,Montana,big_sky
+1286,Montana State,big_sky
+1287,Morehead State,ovc
+1288,Morgan State,meac
+1290,Mississippi Valley State,swac
+1291,Mount St. Mary's,maac
+1292,Middle Tennessee,cusa
+1293,Murray State,mvc
+1294,Northern Colorado,big_sky
+1295,North Dakota State,summit
+1296,Northern Illinois,mac
+1297,Northern Kentucky,horizon
+1298,Navy,patriot
+1299,North Carolina A&T,caa
+1300,North Carolina Central,meac
+1301,NC State,acc
+1303,Omaha,summit
+1304,Nebraska,big_ten
+1305,Nevada,mwc
+1306,New Hampshire,aec
+1307,New Mexico,mwc
+1308,New Mexico State,wac
+1309,New Orleans,southland
+1310,Niagara,maac
+1311,Nicholls State,southland
+1312,NJIT,aec
+1313,Norfolk State,meac
+1314,North Carolina,acc
+1315,North Dakota,summit
+1316,North Florida,a_sun
+1317,North Texas,cusa
+1318,Northeastern,caa
+1319,Northern Arizona,big_sky
+1320,Northern Iowa,mvc
+1321,Northwestern,big_ten
+1322,Northwestern State,southland
+1323,Notre Dame,acc
+1324,Oakland,horizon
+1325,Ohio,mac
+1326,Ohio State,big_ten
+1328,Oklahoma,big_twelve
+1329,Oklahoma State,big_twelve
+1330,Old Dominion,sun_belt
+1331,Oral Roberts,summit
+1332,Oregon,pac_twelve
+1333,Oregon State,pac_twelve
+1334,Pacific,wcc
+1335,Pennsylvania,ivy
+1336,Penn State,big_ten
+1337,Pepperdine,wcc
+1338,Pittsburgh,acc
+1339,Portland,wcc
+1340,Portland State,big_sky
+1341,Prairie View,swac
+1342,Presbyterian,big_south
+1343,Princeton,ivy
+1344,Providence,big_east
+1345,Purdue,big_ten
+1346,Quinnipiac,maac
+1347,Radford,big_south
+1348,Rhode Island,a_ten
+1349,Rice,cusa
+1350,Richmond,a_ten
+1351,Rider,maac
+1352,Robert Morris,horizon
+1353,Rutgers,big_ten
+1354,South Carolina State,meac
+1355,South Dakota State,summit
+1356,Southern Illinois,mvc
+1357,Sacred Heart,nec
+1358,Sam Houston,wac
+1359,Samford,southern
+1360,San Diego,wcc
+1361,San Diego State,mwc
+1362,San Francisco,wcc
+1363,San Jose State,mwc
+1364,UC Santa Barbara,big_west
+1365,Santa Clara,wcc
+1367,South Carolina Upstate,big_south
+1368,Southeastern Louisiana,southland
+1369,Southeast Missouri State,ovc
+1370,Seattle,wac
+1371,Seton Hall,big_east
+1372,Stephen F. Austin,wac
+1373,Siena,maac
+1374,Southern Methodist,aac
+1375,South Alabama,sun_belt
+1376,South Carolina,sec
+1377,South Dakota,summit
+1378,South Florida,aac
+1379,Southern Mississippi,sun_belt
+1380,Southern,swac
+1381,Southern Utah,wac
+1382,St. Bonaventure,a_ten
+1383,St. Francis (NY),nec
+1384,Saint Francis (PA),nec
+1385,St. John's (NY),big_east
+1386,Saint Joseph's,a_ten
+1387,Saint Louis,a_ten
+1388,Saint Mary's (CA),wcc
+1389,Saint Peter's,maac
+1390,Stanford,pac_twelve
+1391,Stetson,a_sun
+1392,Stony Brook,caa
+1393,Syracuse,acc
+1394,Texas A&M-Corpus Christi,southland
+1395,TCU,big_twelve
+1396,Temple,aac
+1397,Tennessee,sec
+1398,Tennessee State,ovc
+1399,Tennessee Tech,ovc
+1400,Texas,big_twelve
+1401,Texas A&M,sec
+1402,Texas State,sun_belt
+1403,Texas Tech,big_twelve
+1404,Tennessee-Martin,ovc
+1405,Toledo,mac
+1406,Towson,caa
+1407,Troy,sun_belt
+1408,Tulane,aac
+1409,Tulsa,aac
+1410,Texas-Rio Grande Valley,wac
+1411,Texas Southern,swac
+1412,UAB,cusa
+1413,UC Davis,big_west
+1414,UC Irvine,big_west
+1415,UC Riverside,big_west
+1416,UCF,aac
+1417,UCLA,pac_twelve
+1418,Louisiana,sun_belt
+1419,Louisiana-Monroe,sun_belt
+1420,Maryland-Baltimore County,aec
+1421,UNC Asheville,big_south
+1422,UNC Greensboro,southern
+1423,UNC Wilmington,caa
+1424,Nevada-Las Vegas,mwc
+1425,Southern California,pac_twelve
+1426,UT Arlington,wac
+1427,UTSA,cusa
+1428,Utah,pac_twelve
+1429,Utah State,mwc
+1430,Utah Valley,wac
+1431,UTEP,cusa
+1433,Virginia Commonwealth,a_ten
+1434,Valparaiso,mvc
+1435,Vanderbilt,sec
+1436,Vermont,aec
+1437,Villanova,big_east
+1438,Virginia,acc
+1439,Virginia Tech,acc
+1440,VMI,southern
+1441,Western Carolina,southern
+1442,Western Illinois,summit
+1443,Western Kentucky,cusa
+1444,Western Michigan,mac
+1447,Wagner,nec
+1448,Wake Forest,acc
+1449,Washington,pac_twelve
+1450,Washington State,pac_twelve
+1451,Weber State,big_sky
+1452,West Virginia,big_twelve
+1453,Green Bay,horizon
+1454,Milwaukee,horizon
+1455,Wichita State,aac
+1456,William & Mary,caa
+1457,Winthrop,big_south
+1458,Wisconsin,big_ten
+1459,Wofford,southern
+1460,Wright State,horizon
+1461,Wyoming,mwc
+1462,Xavier,big_east
+1463,Yale,ivy
+1464,Youngstown State,horizon
+1465,California Baptist,wac
+1466,North Alabama,a_sun
+1467,Merrimack,nec
+1468,Bellarmine,a_sun
+1469,Utah Tech,wac
+1470,Tarleton State,wac
+1471,UC San Diego,big_west
+1472,St. Thomas,summit
+1473,Lindenwood,ovc
+1474,Queens (NC),a_sun
+1475,Southern Indiana,ovc
+1476,Stonehill,nec
+1477,Texas A&M-Commerce,southland

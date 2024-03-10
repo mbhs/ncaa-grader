@@ -1,0 +1,68 @@
+team,team_2,kaggle_id,kaggle_id_2,outcome
+Connecticut,San Diego State,1163,1361,1
+Florida Atlantic,San Diego State,1194,1361,0
+Connecticut,Miami (FL),1163,1274,1
+Creighton,San Diego State,1166,1361,0
+Miami (FL),Texas,1274,1400,1
+Florida Atlantic,Kansas State,1194,1243,1
+Connecticut,Gonzaga,1163,1211,1
+Alabama,San Diego State,1104,1361,0
+Houston,Miami (FL),1222,1274,0
+Creighton,Princeton,1166,1343,1
+Texas,Xavier,1400,1462,1
+Kansas State,Michigan State,1243,1277,1
+Arkansas,Connecticut,1116,1163,0
+Florida Atlantic,Tennessee,1194,1397,1
+Gonzaga,UCLA,1211,1417,1
+Pittsburgh,Xavier,1338,1462,0
+Kansas State,Kentucky,1243,1246,1
+Marquette,Michigan State,1266,1277,0
+Connecticut,Saint Mary's (CA),1163,1388,1
+Baylor,Creighton,1124,1166,0
+FDU,Florida Atlantic,1192,1194,0
+Indiana,Miami (FL),1231,1274,0
+Gonzaga,TCU,1211,1395,1
+Furman,San Diego State,1202,1361,0
+Duke,Tennessee,1181,1397,0
+Arkansas,Kansas,1116,1242,1
+Missouri,Princeton,1281,1343,0
+Auburn,Houston,1120,1222,0
+Penn State,Texas,1336,1400,0
+Northwestern,UCLA,1321,1417,0
+Alabama,Maryland,1104,1268,1
+Michigan State,Southern California,1277,1425,1
+Kennesaw State,Xavier,1244,1462,0
+Baylor,UC Santa Barbara,1124,1364,1
+Marquette,Vermont,1266,1436,1
+Saint Mary's (CA),Virginia Commonwealth,1388,1433,1
+Iowa State,Pittsburgh,1235,1338,0
+Connecticut,Iona,1163,1233,1
+Creighton,NC State,1166,1301,1
+FDU,Purdue,1192,1345,1
+Gonzaga,Grand Canyon,1211,1213,1
+Kentucky,Providence,1246,1344,1
+Drake,Miami (FL),1179,1274,0
+Indiana,Kent State,1231,1245,1
+Kansas State,Montana State,1243,1286,1
+Florida Atlantic,Memphis,1194,1272,1
+Arizona State,TCU,1113,1395,0
+Maryland,West Virginia,1268,1452,1
+Furman,Virginia,1202,1438,1
+Missouri,Utah State,1281,1429,1
+Alabama,Texas A&M-Corpus Christi,1104,1394,1
+Howard,Kansas,1224,1242,0
+College of Charleston,San Diego State,1158,1361,0
+Arizona,Princeton,1112,1343,0
+Arkansas,Illinois,1116,1228,1
+Auburn,Iowa,1120,1234,1
+Duke,Oral Roberts,1181,1331,1
+Boise State,Northwestern,1129,1321,0
+Colgate,Texas,1159,1400,0
+Houston,Northern Kentucky,1222,1297,1
+Tennessee,Louisiana,1397,1418,1
+Penn State,Texas A&M,1336,1401,1
+UCLA,UNC Asheville,1417,1421,1
+FDU,Texas Southern,1192,1411,1
+Arizona State,Nevada,1113,1305,1
+Southeast Missouri State,Texas A&M-Corpus Christi,1369,1394,0
+Mississippi State,Pittsburgh,1280,1338,0

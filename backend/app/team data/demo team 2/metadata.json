@@ -1,0 +1,9 @@
+{
+	"name": "demo team",
+	"members": "Amen Lemiesa, Michael Chen",
+	"image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2024/01/896/500/Giannis-Antetokounmpo5.jpg?ve=1&tl=1",
+	"coefs": {
+		"SRS": -0.09259587,
+		"AdjNRtg": 0.16659886
+	}
+}

@@ -1,0 +1,3 @@
+# Master Data File Info
+
+The data-parser.ipynb uses modified data files from sports reference, and can be modified to include other sources, to create a master data file with statistics for each team. It adds kaggle_id which is a unique 4-digit team identifier as well as season statistics and ranking data. This master data file is then what is able to take coeffecients from each time and calculate a log loss after each matchup in the tournament as occured. This project was made for the 2023-2024 season and is designed to be able to be modified to work for future seasons.
