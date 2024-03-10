@@ -19,7 +19,7 @@ export default function RootLayout({
 
 	return (
 		<html lang="en">
-			<PrimeReactProvider >
+			<PrimeReactProvider>
 				<body className={lexend.className}>{children}</body>
 			</PrimeReactProvider>
 		</html>
