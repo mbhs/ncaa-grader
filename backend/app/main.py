@@ -24,7 +24,7 @@ app = FastAPI()
 load_dotenv()
 
 # load CORS origins and configure middleware
-origins = os.getenv("CORS_ORIGINS", ["https://mbhs.edu"])
+origins = os.getenv("CORS_ORIGINS", ["https://ncaa.mbhs.edu"])
 
 app.add_middleware(
     CORSMiddleware,
@@ -66,6 +66,8 @@ def calculate_log_losses():
 
   # drop unnamed columns
   matchups = matchups.loc[:, ~matchups.columns.str.contains('^Unnamed')]
+
+  print("Loaded Matchups data!")
 
   for team in teams:
     try: 
