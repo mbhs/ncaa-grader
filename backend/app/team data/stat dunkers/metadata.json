@@ -1,10 +1,10 @@
 {
 	"name": "STAT Dunkers",
 	"members": "Sudhish Swain, Lily Bendavid",
-	"image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2024/01/896/500/Giannis-Antetokounmpo5.jpg?ve=1&tl=1",
+	"image": "https://www.si.com/.image/ar_8:10%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_xy_center%2Cq_auto:good%2Cw_620%2Cx_1381%2Cy_759/MjA1MTIwNzYxMjc3NDU4MDUy/usatsi_22808740.jpg",
 	"coefs": {
 		"wab": -0.763,
-    "barthag": 2.049,
-    "adjde": 0.517
+		"barthag": 2.049,
+		"adjde": 0.517
 	}
 }
