@@ -39,7 +39,6 @@ export default function Home() {
 			{!isLoading && data && (
 				<div className="mt-5 md:mt-10">
 					<TabView
-						style={{ fontFamily: "__Lexend_866216, sans-serif" }}
 						pt={{
 							navContainer: { className: "pl-3 sm:pl-12 md:pl-16" },
 							panelContainer: { className: "px-0" },
@@ -103,7 +102,9 @@ export default function Home() {
 								<MultiSelect
 									value={selectedMatchups}
 									onChange={(e) => setSelectedMatchups(e.value)}
-									options={Object.keys(data[0].predictions).map((p) => ({
+									options={Object.keys(
+										data.length !== 0 ? data[0].predictions : {}
+									).map((p) => ({
 										name: p,
 									}))}
 									optionLabel="name"
@@ -138,15 +139,17 @@ export default function Home() {
 														<p className="text-sm md:text-base">
 															Avg Log Loss:{" "}
 															<span className="font-bold">
-																{(Object.entries(d.log_losses)
-																	.filter(([key, value]) =>
-																		selectedMatchups
-																			.map((x) => x.name)
-																			.includes(key)
-																	)
-																	.map(([key, value]) => value)
-																	.reduce((a, b) => a + b, 0) /
-																	selectedMatchups.length).toFixed(4)}
+																{(
+																	Object.entries(d.log_losses)
+																		.filter(([key, value]) =>
+																			selectedMatchups
+																				.map((x) => x.name)
+																				.includes(key)
+																		)
+																		.map(([key, value]) => value)
+																		.reduce((a, b) => a + b, 0) /
+																	selectedMatchups.length
+																).toFixed(4)}
 															</span>
 														</p>
 													</div>

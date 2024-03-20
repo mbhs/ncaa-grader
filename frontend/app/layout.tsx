@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import { PrimeReactProvider } from "primereact/api";
-import "./globals.css";
 import "primereact/resources/primereact.min.css";
-import "primereact/resources/themes/lara-light-cyan/theme.css";
+import "./globals.css";
+import "./theme.css";
 
 const lexend = Lexend({ subsets: ["latin"] });
 
@@ -17,6 +17,7 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+
 	return (
 		<html lang="en">
 			<PrimeReactProvider>

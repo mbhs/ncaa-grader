@@ -1,0 +1,12 @@
+{
+	"name": "The GOAT",
+	"members": "Nikki Tjiputra, Nathan Charles, Mandy Guo",
+	"image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2024/01/896/500/Giannis-Antetokounmpo5.jpg?ve=1&tl=1",
+	"coefs": {
+		"seed": 1.024,
+		"SoS": 0.811,
+		"Off Rebound Rate": -0.284,
+		"AdjEM": 2.238,
+		"TOV/Pace": 0.179
+	}
+}

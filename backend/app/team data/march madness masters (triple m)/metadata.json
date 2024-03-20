@@ -1,0 +1,9 @@
+{
+	"name": "March Madness Masters (Triple M)",
+	"members": "Nicholas Bourg",
+	"image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2024/01/896/500/Giannis-Antetokounmpo5.jpg?ve=1&tl=1",
+	"coefs": {
+		"Ken Pom": 2.88,
+		"Massey": 1.251
+	}
+}

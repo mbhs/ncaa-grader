@@ -1,9 +1,11 @@
 {
-	"name": "demo team",
-	"members": "Amen Lemiesa, Michael Chen",
+	"name": "Slam Dunkin Donuts",
+	"members": "Anne Wang, Jordan Love",
 	"image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2024/01/896/500/Giannis-Antetokounmpo5.jpg?ve=1&tl=1",
 	"coefs": {
-		"SRS": -0.09259587,
-		"AdjNRtg": 0.16659886
+		"AdjEM": 3.208,
+    "seed": 1.060,
+    "RPI": 0.039,
+    "kaggle": -0.993
 	}
 }

@@ -1,0 +1,11 @@
+{
+	"name": "March Sadness",
+	"members": "Daniel He, Chris Jin, Madeline Gold",
+	"image": "https://media.gq.com/photos/573f81dac3ac8ed860728cb3/4:3/w_768,h_576,c_limit/crying-jordan-original_1024.jpg",
+	"coefs": {
+		"Seed": 1.28,
+		"W/L%": -1.77,
+		"SOS": 2.37,
+		"Wins": 3.83
+	}
+}

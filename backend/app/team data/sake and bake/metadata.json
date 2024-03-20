@@ -1,0 +1,12 @@
+{
+	"name": "SAKE and Bake",
+	"members": "Elliot Paschane, Kaitlyn Kim",
+	"image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2024/01/896/500/Giannis-Antetokounmpo5.jpg?ve=1&tl=1",
+	"coefs": {
+		"W-L%": -1.107,
+		"SRS": -7.13,
+		"Pace": 0.145,
+		"seed": 0.926,
+		"KADJ EM": 5.05
+	}
+}

@@ -1,0 +1,69 @@
+Team,kaggle_id,seed,AdjEM,Luck
+UConn,1163,1,32.21,0.047
+Iowa State,1235,2,26.72,0.012
+Illinois,1228,3,23.99,-0.032
+Auburn,1120,4,28.9,-0.067
+San Diego State,1361,5,19.7,-0.032
+BYU,1140,6,21.01,-0.034
+Washington State,1450,7,16.22,0.021
+Florida Atlantic,1194,8,16.24,-0.012
+Northwestern,1321,9,15.91,0.008
+Drake,1179,10,14.71,0.065
+Duquesne,1182,11,9.37,0.049
+UAB,1412,12,6.28,0.116
+Yale,1463,13,9.47,0.001
+Morehead State,1287,14,5.47,0.044
+South Dakota State,1355,15,2.99,-0.018
+Stetson,1391,16,-4.1,0.137
+Houston,1222,1,31.72,0.053
+Marquette,1266,2,22.74,0.036
+Kentucky,1246,3,20.02,-0.027
+Duke,1181,4,24.88,-0.077
+Wisconsin,1458,5,20.6,-0.031
+Texas Tech,1403,6,18.54,0.04
+Florida,1196,7,18.19,-0.007
+Nebraska,1304,8,18.19,0.014
+Texas A&M,1401,9,16.11,-0.025
+Boise State,1129,10,16.38,0.01
+Colorado,1160,10,18.47,0.012
+North Carolina State,1301,11,13.06,0
+James Madison,1241,12,12.9,0.027
+Vermont,1436,13,6.98,0.063
+Oakland,1324,14,2.82,0.082
+Western Kentucky,1443,15,3.06,-0.051
+Longwood,1255,16,0.96,-0.047
+Purdue,1345,1,29.12,0.045
+Tennessee,1397,2,25.97,-0.03
+Creighton,1166,3,23.4,-0.013
+Kansas,1242,4,19.23,0.048
+Gonzaga,1211,5,21.56,-0.052
+South Carolina,1376,6,15.06,0.152
+Texas,1400,7,18.4,-0.034
+Utah State,1429,8,15.11,0.1
+TCU,1395,9,17.29,-0.049
+Colorado State,1161,10,16.6,-0.025
+Virginia,1438,10,12.08,0.109
+Oregon,1332,11,13.43,0.049
+McNeese,1270,12,12.86,0.016
+Samford,1359,13,9.79,0.129
+Akron,1103,14,4.94,-0.002
+Saint Peter's,1389,15,-2.32,0.021
+Grambling State,1212,16,-7.81,0.131
+Montana State,1286,16,-3.9,0
+North Carolina,1314,1,24.65,-0.024
+Arizona,1112,2,26.62,-0.043
+Baylor,1124,3,22.3,-0.004
+Alabama,1104,4,22.48,-0.028
+Saint Mary's,1388,5,19.89,0.02
+Clemson,1155,6,16.94,-0.022
+Dayton,1173,7,17.3,0.003
+Mississippi State,1280,8,17.98,-0.044
+Michigan State,1277,9,20.03,-0.104
+Nevada,1305,10,16.81,0.059
+New Mexico,1307,11,18.94,-0.021
+Grand Canyon,1213,12,13.91,0.022
+Charleston,1158,13,7.61,0.05
+Colgate,1159,14,2.15,0.057
+Long Beach State,1253,15,0,0.047
+Howard,1224,16,-8.26,0.023
+Wagner,1447,16,-10.09,0.022

@@ -1,0 +1,12 @@
+{
+	"name": "Jump Shot Jokers",
+	"members": "Niklas Carlson, Van Cao",
+	"image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2024/01/896/500/Giannis-Antetokounmpo5.jpg?ve=1&tl=1",
+	"coefs": {
+		"AdjO": 3.186,
+		"AdjD": -2.722,
+		"AdjEM (SoS)": 1.127,
+		"Luck": 1.242,
+		"seed": 2.871
+	}
+}

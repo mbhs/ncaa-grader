@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import requests
 from io import StringIO
+import time
 
 # environment variables
 from dotenv import load_dotenv
@@ -17,6 +18,7 @@ import json
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 import numpy as np
+import math
 
 app = FastAPI()
 
@@ -35,8 +37,21 @@ app.add_middleware(
 )
 
 teams = [
-  'demo team',
-  'demo team 2'
+  'hackastat',
+  'march sadness',
+  'kaggle ids',
+  'lebron james',
+  'le bon bon',
+  'we\'re cooked',
+  'tom brady',
+  'ball don\'t log',
+  'jump shot jokers',
+  'march madness masters (triple m)',
+  'sake and bake',
+  'slam dunkin donuts',
+  'stand on our money, tall as edey',
+  "stat dunkers",
+  'the goat'
 ]
 
 data = []
@@ -54,7 +69,7 @@ def read_root() -> list[Data]:
     return data
 
 @app.on_event("startup")
-@repeat_every(seconds=60)
+@repeat_every(seconds=300)
 def calculate_log_losses():
   global data
   temp_data = []
@@ -88,6 +103,7 @@ def calculate_log_losses():
     # create a sklearn Logistic Regression model using coefs from metadata
     model = LogisticRegression(fit_intercept=False) 
     features = list(metadata['coefs'].keys())
+
     # create blank training dataframes
     blank_train_x = pd.DataFrame(columns=features)
     blank_train_x.loc[0] = 0
@@ -107,13 +123,43 @@ def calculate_log_losses():
 
     log_losses = {}
     predictions = {}
+
+    start = time.time()
     
-    # for each matchup, predict the winner
+    # generarate all the possible matchups and use the difference in stats to create a mean and standard deviation to create a z-score standartization function
+    all_matchups = pd.DataFrame(columns=features)
+    for index, row in df.iterrows():
+      # get all the possible matchups that are possible if this team's kaggle_id is lower, making it the home team
+      for index_2, row_2 in df[df['kaggle_id'] > row['kaggle_id']].iterrows():
+        try:
+          all_matchups.loc[len(all_matchups.index)] = row[features] - row_2[features]
+        except Exception as e:
+          print(e)
+          continue
+
+    means = all_matchups.mean()
+    stds = all_matchups.std()
+
+    # for each features in df calculate the z-score
+    for feature in features:
+      df[feature] = (df[feature] - means[feature]) / stds[feature]
+
+    end = time.time()
+    print(f"Standardizied {team} data using z-scores in {end - start} seconds!")
+
     for index, row in matchups.iterrows():
       stats = pd.DataFrame(columns=features)
-      stats[features] = df[df['kaggle_id'] == row['kaggle_id']][features].values - df[df['kaggle_id'] == row['kaggle_id_2']][features].values
+      try:
+        stats[features] = df[df['kaggle_id'] == row['kaggle_id']][features].values - df[df['kaggle_id'] == row['kaggle_id_2']][features].values
+      except Exception as e:
+        print(e)
+        
+      try:
+        pred = model.predict_proba(stats[features])
+      except Exception as e:
+        print(e)
+        continue
 
-      pred = model.predict_proba(stats[features])
       matchup_name = f"{row['team']} vs {row['team_2']}"
       predictions[matchup_name] = pred[0][1]
 
@@ -126,11 +172,14 @@ def calculate_log_losses():
       log_losses[matchup_name] = log_loss
 
     # calculate the average log loss
-    avg_log_loss = np.mean(list(log_losses.values()))
+    if len(log_losses) == 0:
+      avg_log_loss = -1
+    else:
+      avg_log_loss = np.mean(list(log_losses.values()))
     print(f"Calculated {team} avg log loss: {avg_log_loss}!")
 
     temp_data.append({
-      'team': team,
+      'team': metadata['name'],
       'image': metadata['image'],
       'members': metadata['members'],
       'log_losses': log_losses,
