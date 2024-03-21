@@ -51,7 +51,8 @@ teams = [
   'slam dunkin donuts',
   'stand on our money, tall as edey',
   "stat dunkers",
-  'the goat'
+  'the goat',
+  'clickbait'
 ]
 
 data = []
@@ -162,7 +163,6 @@ def calculate_log_losses():
 
       matchup_name = f"{row['team']} vs {row['team_2']}"
       if (metadata.get('cap') != None or metadata.get('floor') != None):
-        print("hello")
         if (pred[0][1] > metadata['cap']):
           pred[0][1] = metadata['cap']
           pred[0][0] = 1 - metadata['cap']
