@@ -116,77 +116,95 @@ export default function Home() {
 
 							{selectedMatchups.length > 0 && (
 								<div className="flex flex-col gap-3 md:gap-5 text-black mt-5">
-									{data.map((d, i) => (
-										<div
-											key={i}
-											className="border-2 border-black bg-red-400 rounded-l-full rounded-r-md"
-										>
-											<div className="flex justify-between flex-wrap">
-												<div className="flex gap-3 md:gap-5 items-center">
-													<p className="font-bold text-xl md:text-3xl pl-5">
-														#{i + 1}
-													</p>
-													<img
-														src={d.image}
-														alt={`{d.team} image`}
-														className="h-24 w-24 md:w-36 object-cover border-l-2 border-r-2 border-black"
-													/>
-													<div>
-														<h2 className="font-bold text-sm md:text-base">
-															{d.team}
-														</h2>
-														<p className="text-xs md:text-sm">{d.members}</p>
-														<p className="text-sm md:text-base">
-															Avg Log Loss:{" "}
-															<span className="font-bold">
-																{(
-																	Object.entries(d.log_losses)
-																		.filter(([key, value]) =>
-																			selectedMatchups
-																				.map((x) => x.name)
-																				.includes(key)
-																		)
-																		.map(([key, value]) => value)
-																		.reduce((a, b) => a + b, 0) /
-																	selectedMatchups.length
-																).toFixed(4)}
-															</span>
+									{data
+										.sort(
+											(team_1, team_2) =>
+												Object.entries(team_1.log_losses)
+													.filter(([key, value]) =>
+														selectedMatchups.map((x) => x.name).includes(key)
+													)
+													.map(([key, value]) => value)
+													.reduce((a, b) => a + b, 0) /
+													selectedMatchups.length -
+												Object.entries(team_2.log_losses)
+													.filter(([key, value]) =>
+														selectedMatchups.map((x) => x.name).includes(key)
+													)
+													.map(([key, value]) => value)
+													.reduce((a, b) => a + b, 0) /
+													selectedMatchups.length
+										)
+										.map((d, i) => (
+											<div
+												key={i}
+												className="border-2 border-black bg-red-400 rounded-l-full rounded-r-md"
+											>
+												<div className="flex justify-between flex-wrap">
+													<div className="flex gap-3 md:gap-5 items-center">
+														<p className="font-bold text-xl md:text-3xl pl-5">
+															#{i + 1}
 														</p>
+														<img
+															src={d.image}
+															alt={`{d.team} image`}
+															className="h-24 w-24 md:w-36 object-cover border-l-2 border-r-2 border-black"
+														/>
+														<div>
+															<h2 className="font-bold text-sm md:text-base">
+																{d.team}
+															</h2>
+															<p className="text-xs md:text-sm">{d.members}</p>
+															<p className="text-sm md:text-base">
+																Avg Log Loss:{" "}
+																<span className="font-bold">
+																	{(
+																		Object.entries(d.log_losses)
+																			.filter(([key, value]) =>
+																				selectedMatchups
+																					.map((x) => x.name)
+																					.includes(key)
+																			)
+																			.map(([key, value]) => value)
+																			.reduce((a, b) => a + b, 0) /
+																		selectedMatchups.length
+																	).toFixed(4)}
+																</span>
+															</p>
+														</div>
 													</div>
-												</div>
-												<div className="hidden xl:flex">
-													<div className="h-24 w-80 pt-1 pb-1 overflow-auto border-l-2 border-black pl-2">
-														<h3 className="font-bold">Predictions</h3>
-														{Object.entries(d.predictions)
-															.filter(([key, value]) =>
-																selectedMatchups
-																	.map((x) => x.name)
-																	.includes(key)
-															)
-															.map(([key, value]) => (
-																<p key={key} className="text-sm">
-																	{key}: {(value * 100).toFixed(2)}%
-																</p>
-															))}
-													</div>
-													<div className="h-24 w-80 pt-1 pb-1 overflow-auto border-l-2 border-black pl-2">
-														<h3 className="font-bold">Log Losses</h3>
-														{Object.entries(d.log_losses)
-															.filter(([key, value]) =>
-																selectedMatchups
-																	.map((x) => x.name)
-																	.includes(key)
-															)
-															.map(([key, value]) => (
-																<p key={key} className="text-sm">
-																	{key}: {value.toFixed(4)}
-																</p>
-															))}
+													<div className="hidden xl:flex">
+														<div className="h-24 w-80 pt-1 pb-1 overflow-auto border-l-2 border-black pl-2">
+															<h3 className="font-bold">Predictions</h3>
+															{Object.entries(d.predictions)
+																.filter(([key, value]) =>
+																	selectedMatchups
+																		.map((x) => x.name)
+																		.includes(key)
+																)
+																.map(([key, value]) => (
+																	<p key={key} className="text-sm">
+																		{key}: {(value * 100).toFixed(2)}%
+																	</p>
+																))}
+														</div>
+														<div className="h-24 w-80 pt-1 pb-1 overflow-auto border-l-2 border-black pl-2">
+															<h3 className="font-bold">Log Losses</h3>
+															{Object.entries(d.log_losses)
+																.filter(([key, value]) =>
+																	selectedMatchups
+																		.map((x) => x.name)
+																		.includes(key)
+																)
+																.map(([key, value]) => (
+																	<p key={key} className="text-sm">
+																		{key}: {value.toFixed(4)}
+																	</p>
+																))}
+														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-									))}
+										))}
 								</div>
 							)}
 						</TabPanel>
