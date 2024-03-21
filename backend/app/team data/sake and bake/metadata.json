@@ -1,6 +1,6 @@
 {
 	"name": "SAKE and Bake",
-	"members": "Elliot Paschane, Kaitlyn Kim",
+	"members": "Elliott Paschane, Kaitlyn Kim, Sophia Zeng, Arabella O'Neale",
 	"image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2024/01/896/500/Giannis-Antetokounmpo5.jpg?ve=1&tl=1",
 	"coefs": {
 		"W-L%": 1.107,
@@ -8,5 +8,7 @@
 		"Pace": -0.145,
 		"seed": -0.926,
 		"KADJ EM": -5.05
-	}
+	},
+	"cap": 0.99,
+	"floor": 0.01
 }
