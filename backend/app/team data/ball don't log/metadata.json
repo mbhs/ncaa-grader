@@ -8,5 +8,7 @@
 		"Sonny Moore Rating": -1.098,
 		"BPI Rating": 2.628,
 		"Ken Pom Ranking": -2.664
-	}
+	},
+	"cap": 0.9,
+	"floor": 0.1
 }
