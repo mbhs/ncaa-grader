@@ -161,6 +161,15 @@ def calculate_log_losses():
         continue
 
       matchup_name = f"{row['team']} vs {row['team_2']}"
+      if (metadata.get('cap') != None or metadata.get('floor') != None):
+        print("hello")
+        if (pred[0][1] > metadata['cap']):
+          pred[0][1] = metadata['cap']
+          pred[0][0] = 1 - metadata['cap']
+        elif (pred[0][1] < metadata['floor']):
+          pred[0][1] = metadata['floor']
+          pred[0][0] = 1 - metadata['floor']
+
       predictions[matchup_name] = pred[0][1]
 
       # skip unplayed games
