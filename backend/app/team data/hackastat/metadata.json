@@ -3,11 +3,11 @@
 	"members": "Tinu Vanapamula, Noah Miatudila, Natalia Argoti, Aiden Hedderly",
 	"image": "https://i.kym-cdn.com/photos/images/newsfeed/001/474/527/b15.png",
 	"coefs": {
-		"SRS": 1.3679439,
-		"OTRB": -2.3912568,
-		"TRB%": -1.28140509,
-		"FGA": 1.10319404,
-		"TOV": 0.18979926,
-		"AST": -0.40421572
+		"SRS": 1.46629007,
+		"OTRB": -2.4387284,
+		"FGA": 1.10399347,
+		"TRB%": -1.34290327,
+		"TOV": 0.29309183,
+		"AST": -0.61118587
 	}
-}        
+}
