@@ -121,7 +121,7 @@ export default function Home() {
 
 							{selectedMatchups.length > 0 && (
 								<div className="flex flex-col gap-3 md:gap-5 text-black mt-5">
-									{data
+									{[...data]
 										.sort(
 											(team_1, team_2) =>
 												Object.entries(team_1.log_losses)

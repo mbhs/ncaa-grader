@@ -56,6 +56,7 @@ teams = [
 ]
 
 data = []
+matchups = pd.DataFrame(columns=['outcome'])
 
 class Data(BaseModel):
   team: str
@@ -70,20 +71,32 @@ def read_root() -> list[Data]:
     return data
 
 @app.on_event("startup")
-@repeat_every(seconds=300)
+@repeat_every(seconds=30)
 def calculate_log_losses():
   global data
+  global matchups
   temp_data = []
 
   # load the matchups data
-  matchups = pd.read_csv('./matchup data/matchups.csv')
   raw_matchup_data = requests.get(f'https://docs.google.com/spreadsheets/d/1i-2i5E2I-M7uCjcSS1TLW1v2n5dbZQfVQIK16kx5-94/gviz/tq?tqx=out:csv&sheet=Matchups').text
-  matchups = pd.read_csv(StringIO(raw_matchup_data))
+  new_matchups = pd.read_csv(StringIO(raw_matchup_data))
 
   # drop unnamed columns
-  matchups = matchups.loc[:, ~matchups.columns.str.contains('^Unnamed')]
-
+  new_matchups = new_matchups.loc[:, ~new_matchups.columns.str.contains('^Unnamed')]
+  
   print("Loaded Matchups data!")
+
+  def filterNan(x):
+    if (math.isnan(x)):
+      return False
+    return True
+
+  if (list(filter(filterNan, new_matchups['outcome'])) == list(filter(filterNan, matchups['outcome']))):
+    print("No update in matchups data!")
+    return
+  else:
+    print('New matchups data found!')
+    matchups = new_matchups
 
   for team in teams:
     try: 
