@@ -145,16 +145,21 @@ export default function Home() {
 												className="border-2 border-black bg-red-400 rounded-l-full rounded-r-md"
 											>
 												<div className="flex justify-between flex-wrap">
-													<div className="flex gap-3 md:gap-5 items-center">
-														<p className="font-bold text-xl md:text-3xl pl-5">
-															#{i + 1}
-														</p>
-														<img
-															src={d.image}
-															alt={`{d.team} image`}
-															className="h-24 w-24 md:w-36 object-cover border-l-2 border-r-2 border-black"
-														/>
-														<div>
+													<div className="flex-1 flex gap-3 md:gap-5 items-center">
+														<div className="relative">
+															<img
+																src={d.image}
+																alt={`{d.team} image`}
+																className="h-24 w-24 md:w-36 object-cover border-l-2 border-r-2 border-black rounded-l-full"
+															/>
+															<div className="rounded-l-full absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-l opacity-90 from-transparent to-white z-10"></div>
+															<div className="absolute top-0 bottom-0 flex flex-col justify-center z-20">
+																<p className="font-bold text-xl md:text-3xl pl-5">
+																	#{i + 1}
+																</p>
+															</div>
+														</div>
+														<div className="flex-1 overflow-auto h-24 flex flex-col justify-center">
 															<h2 className="font-bold text-sm md:text-base">
 																{d.team}
 															</h2>
