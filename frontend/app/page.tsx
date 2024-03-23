@@ -49,19 +49,19 @@ export default function Home() {
 								{data.map((d, i) => (
 									<div
 										key={i}
-										className="border-2 border-black bg-red-400 rounded-l-full rounded-r-md"
+										className="border-2 border-black bg-red-400 rounded-tl-[98px] md:rounded-l-full rounded-r-md rounded-bl-md md:rounded-r-xl"
 									>
-										<div className="flex justify-between flex-wrap">
-											<div className="flex-1 flex gap-3 md:gap-5 items-center">
-												<div className="relative">
+										<div className="flex justify-between flex-col md:flex-row">
+											<div className="flex flex-1 gap-3 md:gap-5 items-center">
+												<div className="flex-none relative">
 													<img
 														src={d.image}
 														alt={`{d.team} image`}
-														className="h-24 w-24 md:w-36 object-cover border-l-2 border-r-2 border-black rounded-l-full"
+														className="h-24 w-36 object-cover border-l-2 border-r-2 border-black rounded-tl-full md:rounded-l-full"
 													/>
-													<div className="rounded-l-full absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-l opacity-90 from-transparent to-white z-10"></div>
+													<div className="rounded-tl-full md:rounded-l-full absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-l opacity-90 from-transparent to-white z-10"></div>
 													<div className="absolute top-0 bottom-0 flex flex-col justify-center z-20">
-														<p className="font-bold text-xl md:text-3xl pl-5">
+														<p className="font-bold text-2xl md:text-3xl pl-8 md:pl-5">
 															#{i + 1}
 														</p>
 													</div>
@@ -79,23 +79,28 @@ export default function Home() {
 													</p>
 												</div>
 											</div>
-											<div className="hidden xl:flex">
-												<div className="h-24 w-80 pt-1 pb-1 overflow-auto border-l-2 border-black pl-2">
-													<h3 className="font-bold">Predictions</h3>
+											<div>
+												<div className="h-24 w-full md:w-80 lg:w-96 pt-1 pb-1 overflow-auto border-t-2 md:border-t-0 md:border-l-2 border-black pl-2">
+													<h3 className="font-bold text-sm md:text-base">
+														Predictions & Log Losses
+													</h3>
 													{Object.entries(d.predictions).map(([key, value]) => (
 														<p key={key} className="text-sm">
-															{key}: {(value * 100).toFixed(2)}%
+															{key}: {(value * 100).toFixed(2)}%{" "}
+															{d.log_losses.hasOwnProperty(key)
+																? `(${d.log_losses[key].toFixed(4)})`
+																: ""}
 														</p>
 													))}
 												</div>
-												<div className="h-24 w-80 pt-1 pb-1 overflow-auto border-l-2 border-black pl-2">
+												{/* <div className="h-24 w-80 pt-1 pb-1 overflow-auto border-l-2 border-black pl-2">
 													<h3 className="font-bold">Log Losses</h3>
 													{Object.entries(d.log_losses).map(([key, value]) => (
 														<p key={key} className="text-sm">
 															{key}: {value.toFixed(4)}
 														</p>
 													))}
-												</div>
+												</div> */}
 											</div>
 										</div>
 									</div>
@@ -142,19 +147,19 @@ export default function Home() {
 										.map((d, i) => (
 											<div
 												key={i}
-												className="border-2 border-black bg-red-400 rounded-l-full rounded-r-md"
+												className="border-2 border-black bg-red-400 rounded-tl-[98px] md:rounded-l-full rounded-r-md rounded-bl-md md:rounded-r-xl"
 											>
-												<div className="flex justify-between flex-wrap">
-													<div className="flex-1 flex gap-3 md:gap-5 items-center">
-														<div className="relative">
+												<div className="flex justify-between flex-col md:flex-row">
+													<div className="flex flex-1 gap-3 md:gap-5 items-center">
+														<div className="flex-none relative">
 															<img
 																src={d.image}
 																alt={`{d.team} image`}
-																className="h-24 w-24 md:w-36 object-cover border-l-2 border-r-2 border-black rounded-l-full"
+																className="h-24 w-36 object-cover border-l-2 border-r-2 border-black rounded-tl-full md:rounded-l-full"
 															/>
-															<div className="rounded-l-full absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-l opacity-90 from-transparent to-white z-10"></div>
+															<div className="rounded-tl-full md:rounded-l-full absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-l opacity-90 from-transparent to-white z-10"></div>
 															<div className="absolute top-0 bottom-0 flex flex-col justify-center z-20">
-																<p className="font-bold text-xl md:text-3xl pl-5">
+																<p className="font-bold text-2xl md:text-3xl pl-8 md:pl-5">
 																	#{i + 1}
 																</p>
 															</div>
@@ -182,9 +187,11 @@ export default function Home() {
 															</p>
 														</div>
 													</div>
-													<div className="hidden xl:flex">
-														<div className="h-24 w-80 pt-1 pb-1 overflow-auto border-l-2 border-black pl-2">
-															<h3 className="font-bold">Predictions</h3>
+													<div>
+														<div className="h-24 w-full md:w-80 lg:w-96 pt-1 pb-1 overflow-auto border-t-2 md:border-t-0 md:border-l-2 border-black pl-2">
+															<h3 className="font-bold text-sm md:text-base">
+																Predictions & Log Losses
+															</h3>
 															{Object.entries(d.predictions)
 																.filter(([key, value]) =>
 																	selectedMatchups
@@ -193,21 +200,10 @@ export default function Home() {
 																)
 																.map(([key, value]) => (
 																	<p key={key} className="text-sm">
-																		{key}: {(value * 100).toFixed(2)}%
-																	</p>
-																))}
-														</div>
-														<div className="h-24 w-80 pt-1 pb-1 overflow-auto border-l-2 border-black pl-2">
-															<h3 className="font-bold">Log Losses</h3>
-															{Object.entries(d.log_losses)
-																.filter(([key, value]) =>
-																	selectedMatchups
-																		.map((x) => x.name)
-																		.includes(key)
-																)
-																.map(([key, value]) => (
-																	<p key={key} className="text-sm">
-																		{key}: {value.toFixed(4)}
+																		{key}: {(value * 100).toFixed(2)}%{" "}
+																		{d.log_losses.hasOwnProperty(key)
+																			? `(${d.log_losses[key].toFixed(4)})`
+																			: ""}
 																	</p>
 																))}
 														</div>
