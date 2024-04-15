@@ -1,0 +1,13 @@
+{
+	"name": "Kaggle ID 2.0",
+	"members": "Michael Chen, Amen Lemiesa, Angelina Cao, Isabelle Rivera",
+	"image": "https://staticg.sportskeeda.com/editor/2021/12/a4362-16391969791383-1920.jpg",
+	"coefs": {
+		"Seed": -0.334,
+		"AST%": -0.023,
+		"STL%": 0.018,
+		"BARTHAG": -0.710,
+		"ADJO": 0.915,
+		"ADJD": -0.899
+	}
+}

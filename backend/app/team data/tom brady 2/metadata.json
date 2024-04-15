@@ -1,0 +1,10 @@
+{
+	"name": "Tom Brady 2.0",
+	"members": "Nicholas Khil, Sophie Hansen, Sameer Mehta, Jenny You",
+	"image": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/02/03/16754461789752.jpg",
+	"coefs": {
+		"Off Eff": 1.829,
+		"Def Eff": -1.502,
+		"seed": 0.963
+	}
+}

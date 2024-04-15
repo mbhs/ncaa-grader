@@ -52,7 +52,9 @@ teams = [
   'stand on our money, tall as edey',
   "stat dunkers",
   'the goat',
-  'clickbait'
+  'clickbait',
+  'kaggle ids 2',
+  'tom brady 2'
 ]
 
 data = []
