@@ -1,0 +1,11 @@
+{
+	"name": "Lebron James 3.0",
+	"members": "Luke Mei, Andy Cui",
+	"image": "https://media.gq.com/photos/573f81dac3ac8ed860728cb3/4:3/w_768,h_576,c_limit/crying-jordan-original_1024.jpg",
+	"coefs": {
+		"Bart": 4.265,
+		"Seed": 2.653,
+		"W/L": 2.482,
+		"SOS": -0.945
+	}
+}

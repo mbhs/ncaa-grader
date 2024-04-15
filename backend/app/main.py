@@ -56,6 +56,7 @@ teams = [
   'kaggle ids 2',
   'tom brady 2',
   'lebron james 2',
+  'lebron james 3'
 ]
 
 data = []
