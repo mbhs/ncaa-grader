@@ -1,0 +1,15 @@
+{
+	"name": "Hack-a-Stat 2.0",
+	"members": "Tinu Vanapamula, Noah Miatudila, Natalia Argoti, Aiden Hedderly",
+	"image": "https://i.kym-cdn.com/photos/images/newsfeed/001/474/527/b15.png",
+	"coefs": {
+		"SRS": 1.46629007,
+		"OTRB": -2.4387284,
+		"FGA": 1.10399347,
+		"TRB%": -1.34290327,
+		"TOV": 0.29309183,
+		"AST": -0.61118587
+	},
+	"cap": 0.95,
+	"floor": 0.05
+}
