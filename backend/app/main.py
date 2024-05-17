@@ -53,14 +53,14 @@ teams = [
   "stat dunkers",
   'the goat',
   'clickbait',
-  'kaggle ids 2',
-  'tom brady 2',
-  'lebron james 2',
-  'lebron james 3',
-  'stand on our money, tall as edey 2',
-  'jump shot jokers 2',
-  'stat dunkers 2',
-  'hackastat 2'
+  # 'kaggle ids 2',
+  # 'tom brady 2',
+  # 'lebron james 2',
+  # 'lebron james 3',
+  # 'stand on our money, tall as edey 2',
+  # 'jump shot jokers 2',
+  # 'stat dunkers 2',
+  # 'hackastat 2'
 ]
 
 data = []
@@ -79,7 +79,7 @@ def read_root() -> list[Data]:
     return data
 
 @app.on_event("startup")
-@repeat_every(seconds=30)
+@repeat_every(seconds=86400)
 def calculate_log_losses():
   global data
   global matchups
